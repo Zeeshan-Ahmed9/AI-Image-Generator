@@ -97,7 +97,7 @@ const Generate = () => {
             {/* Generated Image */}
             {isImageLoaded && (
                 <div className="mb-10">
-                    <div className="w-[420px] relative rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_60px_-15px_rgba(139,92,246,0.5)]">
+                    <div className="w-[420px] max-w-full relative rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_60px_-15px_rgba(139,92,246,0.5)]">
                         <Image
                             src={image}
                             alt="Generated result"
@@ -116,11 +116,18 @@ const Generate = () => {
             </p>
             {!isImageLoaded && (
                 <div className="flex flex-col items-center w-full max-w-3xl mt-12">
-                    <h1 className="font-space-grotesk text-4xl md:text-6xl font-black italic tracking-[-0.04em] text-center mb-8">
-                        <span className="bg-gradient-to-r from-white via-purple-200 to-pink-300 bg-clip-text text-transparent">
-                            Describe what you want to generate
-                        </span>
-                    </h1>
+                    <div className="mb-10">
+                        <div className="w-[420px] max-w-full relative rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_60px_-15px_rgba(139,92,246,0.5)]">
+                            <Image
+                                src="/images/gen1.png"
+                                alt="Initial preview"
+                                width={420}
+                                height={420}
+                                className="w-full h-auto"
+                                unoptimized
+                            />
+                        </div>
+                    </div>
                     <div className="w-full gemini-prompt-shell">
                         {/* Bottom ambient glow — makes the container feel like it's floating */}
                         <div className="gemini-ambient-glow" aria-hidden="true" />
