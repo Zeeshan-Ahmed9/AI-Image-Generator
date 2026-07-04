@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Next.js build output and cache
+client/.next/
+client/out/
+
+# Environment files
+.env
+.env*.local
+client/.env*.local
+server/.env
+
+# Local development files
+.DS_Store
+*.log
+
+# TypeScript build info
+client/tsconfig.tsbuildinfo
