@@ -23,7 +23,7 @@ A Next.js-based AI image generation application with a modern UI and backend API
 
 - Node.js (v16 or higher)
 - MongoDB
-- A Replicate AI API Key
+- A Clipdrp AI API Key
 
 ## Live Preview
 https://imagen-ebon-six.vercel.app/
